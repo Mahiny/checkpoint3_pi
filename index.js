@@ -14,7 +14,7 @@ function Aluno(nome, qtdFaltas, notas) {
     this.qtdFaltas = qtdFaltas
     this.notas = notas
     
-    // passo 2
+    // Passo 2
     this.calculaMedia = function() {
         let aluno = {}
         let notasTotal = this.notas.reduce((prev, curr) => prev + curr )
@@ -39,7 +39,7 @@ const Luis    =  new Aluno('Luis',    (Math.random() * 10) | 0, [(Math.random() 
 const Mahiny  =  new Aluno('Mahiny',  (Math.random() * 10) | 0, [(Math.random() * 10) | 0, (Math.random() * 10) | 0, (Math.random() * 10) | 0])
 const Wagner  =  new Aluno('Wagner',  (Math.random() * 10) | 0, [(Math.random() * 10) | 0, (Math.random() * 10) | 0, (Math.random() * 10) | 0])
 
-// passo 3
+// Passo 3
 let curso = {
     nome: 'JavaScript',
     faltasMax: 3,
@@ -66,6 +66,7 @@ let curso = {
         }
         return false
     },
+    // Passo 6
     verificaAprovacao: function() {
         this.listaEstudantes.forEach(aluno => {
             if (this.aprovado(aluno)) {
