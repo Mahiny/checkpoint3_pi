@@ -1,12 +1,11 @@
-// Passo 1
-
+    // Passo 1    
 let alunos = [
     // {nome: 'David', qtdFaltas: random, notas: [random,random,random]},
     // {nome: 'Erik', qtdFaltas: random, notas: [random,random,random]},
     // {nome: 'Gabriel', qtdFaltas: random, notas: [random,random,random]},
     // {nome: 'Luis', qtdFaltas: random, notas: [random,random,random]},
     // {nome: 'Mahiny', qtdFaltas: random, notas: [random,random,random]},
-    // {nome: 'Wagner', qtdFaltas: random, notas: [random,random,random]}
+    // {nome: 'Wagner', qtdFaltas: random, notas: [random,random,random]}  
 ] 
 
 function Aluno(nome, qtdFaltas, notas) {
@@ -39,7 +38,7 @@ const Luis    =  new Aluno('Luis',    (Math.random() * 10) | 0, [(Math.random() 
 const Mahiny  =  new Aluno('Mahiny',  (Math.random() * 10) | 0, [(Math.random() * 10) | 0, (Math.random() * 10) | 0, (Math.random() * 10) | 0])
 const Wagner  =  new Aluno('Wagner',  (Math.random() * 10) | 0, [(Math.random() * 10) | 0, (Math.random() * 10) | 0, (Math.random() * 10) | 0])
 
-// Passo 3
+    // Passo 3
 let curso = {
     nome: 'JavaScript',
     faltasMax: 3,
@@ -48,10 +47,12 @@ let curso = {
         David, Erik, Gabriel,
         Luis, Mahiny, Wagner
     ],
+    
     // Passo 4
     novoAluno: function() {
         this.listaEstudantes.push(new Aluno('João', 7, [7,5,3]))
     },
+    
     // Passo 5
     aprovado: function(aluno) {
         let faltas = aluno.qtdFaltas
@@ -66,6 +67,7 @@ let curso = {
         }
         return false
     },
+    
     // Passo 6
     verificaAprovacao: function() {
         this.listaEstudantes.forEach(aluno => {
